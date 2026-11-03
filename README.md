@@ -19,7 +19,7 @@ Need a picker UI? See [`elk_icon_picker`](https://pub.dev/packages/elk_icon_pick
 
 ```yaml
 dependencies:
-  elk_stroke_icons: ^0.1.0
+  elk_stroke_icons: ^0.1.1
 ```
 
 ```dart
