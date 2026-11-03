@@ -13,7 +13,7 @@ before any picker release that needs a new version of it.
 ## Rules
 
 - No external dependencies — ever. Ask before adding anything.
-- Public API is the barrel file lib/elk_lucide_icons.dart — any new
+- Public API is the barrel file lib/elk_stroke_icons.dart — any new
   public class or function must be exported there.
 - No picker/UI concerns here (e.g. `CategoryStyle` lives in the picker).
 
@@ -28,7 +28,7 @@ before any picker release that needs a new version of it.
 ## Architecture
 
 See FILES.md for the full file index. Quick summary:
-- `lib/elk_lucide_icons.dart` — public barrel file (only export point)
+- `lib/elk_stroke_icons.dart` — public barrel file (only export point)
 - `lib/src/gen/lucide_icons.g.dart` — **GENERATED, do not edit by hand**
 - `lib/src/widgets/lucide_icon.dart` — `LucideIcon` CustomPainter widget
 - `lib/src/services/icon_search_service.dart` — search + rename-safe `findByName`

@@ -1,7 +1,7 @@
-name: elk_lucide_icons
+name: elk_stroke_icons
 description: "Lucide icons for Flutter with no fonts or SVG assets: drawn with CustomPainter from generated Dart data, with search and rename-safe name lookup."
 version: 0.1.0
-repository: https://github.com/Cindanela/elk_lucide_icons
+repository: https://github.com/Cindanela/elk_stroke_icons
 
 environment:
   sdk: ^3.12.0

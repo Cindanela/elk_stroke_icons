@@ -1,4 +1,4 @@
-# File index — elk_lucide_icons
+# File index — elk_stroke_icons
 
 Last updated: 2026-09-29
 
@@ -12,7 +12,7 @@ Last updated: 2026-09-29
 | File | Path | What it does |
 |------|------|-------------|
 | `pubspec.yaml` | `pubspec.yaml` | Package manifest — no dependencies beyond Flutter. |
-| `elk_lucide_icons.dart` | `lib/elk_lucide_icons.dart` | Public API barrel file. |
+| `elk_stroke_icons.dart` | `lib/elk_stroke_icons.dart` | Public API barrel file. |
 | `check-lucide-updates.yml` | `.github/workflows/check-lucide-updates.yml` | Weekly: regenerates icons and opens an issue if upstream Lucide changed. |
 
 ### Generated

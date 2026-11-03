@@ -235,7 +235,7 @@ Future<String> _getText(
   final request = await client.getUrl(uri);
   request.headers.set(
     HttpHeaders.userAgentHeader,
-    'elk_lucide_icons-icon-generator',
+    'elk_stroke_icons-icon-generator',
   );
   if (authorization != null) {
     request.headers.set(HttpHeaders.authorizationHeader, authorization);

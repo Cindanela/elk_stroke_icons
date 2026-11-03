@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/rendering.dart';
-import 'package:elk_lucide_icons/src/utils/svg_path_parser.dart';
+import 'package:elk_stroke_icons/src/utils/svg_path_parser.dart';
 
 // Helper to assert paths are roughly similar based on bounds and metric length
 void _expectPathMatch(Path path, Path expectedPath) {

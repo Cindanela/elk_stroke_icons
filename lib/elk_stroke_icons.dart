@@ -1,4 +1,4 @@
-// elk_lucide_icons.dart
+// elk_stroke_icons.dart
 
 export 'src/models/lucide_category.dart';
 export 'src/models/lucide_icon_data.dart';

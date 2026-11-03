@@ -1,4 +1,4 @@
-import 'package:elk_lucide_icons/elk_lucide_icons.dart';
+import 'package:elk_stroke_icons/elk_stroke_icons.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MaterialApp(home: _Demo()));

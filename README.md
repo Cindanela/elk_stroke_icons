@@ -1,9 +1,11 @@
-# elk_lucide_icons
+# elk_stroke_icons
 
-[![Pub Version](https://img.shields.io/pub/v/elk_lucide_icons?style=for-the-badge)](https://pub.dev/packages/elk_lucide_icons)
+[![Pub Version](https://img.shields.io/pub/v/elk_stroke_icons?style=for-the-badge)](https://pub.dev/packages/elk_stroke_icons)
 [![License](https://img.shields.io/badge/license-MIT%20/%20ISC-blue.svg?style=for-the-badge)](LICENSE)
 
 All [Lucide](https://lucide.dev) icons for Flutter, drawn with `CustomPainter` from generated Dart data. No icon fonts, no SVG assets, and no dependencies beyond Flutter.
+
+> **Unofficial.** Not affiliated with or endorsed by the [Lucide](https://lucide.dev) project. The icon data comes from Lucide under the ISC License; see [LICENSE-LUCIDE](LICENSE-LUCIDE).
 
 Need a picker UI? See [`elk_icon_picker`](https://pub.dev/packages/elk_icon_picker), which builds on this package.
 
@@ -17,11 +19,11 @@ Need a picker UI? See [`elk_icon_picker`](https://pub.dev/packages/elk_icon_pick
 
 ```yaml
 dependencies:
-  elk_lucide_icons: ^0.1.0
+  elk_stroke_icons: ^0.1.0
 ```
 
 ```dart
-import 'package:elk_lucide_icons/elk_lucide_icons.dart';
+import 'package:elk_stroke_icons/elk_stroke_icons.dart';
 
 LucideIcon(
   LucideIcons.house,

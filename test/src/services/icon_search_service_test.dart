@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:elk_lucide_icons/src/services/icon_search_service.dart';
-import 'package:elk_lucide_icons/src/gen/lucide_icons.g.dart';
+import 'package:elk_stroke_icons/src/services/icon_search_service.dart';
+import 'package:elk_stroke_icons/src/gen/lucide_icons.g.dart';
 
 void main() {
   group('IconSearchService', () {
