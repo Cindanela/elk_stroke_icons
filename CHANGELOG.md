@@ -1,4 +1,4 @@
-## Unreleased
+## 0.1.2
 
 * `LucideIcon` imports `package:flutter/widgets.dart` rather than
   `material.dart`, so apps on `package:material_ui` need no Material import.
