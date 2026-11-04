@@ -1,3 +1,11 @@
+## Unreleased
+
+* `LucideIcon` imports `package:flutter/widgets.dart` rather than
+  `material.dart`, so apps on `package:material_ui` need no Material import.
+  Its colour fallback is now plain black in place of `Colors.black`.
+* `parseSvgPath` reads compact arc flags (`a1 1 0 01.5.5`). They were read as
+  one number, so every icon using them threw a `RangeError` while painting.
+
 ## 0.1.1
 
 * Regenerated from upstream Lucide: 1856 → 2019 icons (163 added, none removed).

@@ -326,11 +326,31 @@ final _pathRegExp = RegExp(
 
 List<_Token> _tokenize(String d) {
   final result = <_Token>[];
-  for (final m in _pathRegExp.allMatches(d)) {
-    if (m.group(1) != null) {
-      result.add(_Token.command(m.group(1)!));
+  var pos = 0;
+  var arc = false;
+  var arg = 0;
+  while (pos < d.length) {
+    // An arc's two flags are one digit each and may run straight into what
+    // follows: `a1 1 0 01.5.5` is flags 0 and 1, then .5 and .5.
+    final flag = arc && (arg % 7 == 3 || arg % 7 == 4);
+    if (flag && (d[pos] == '0' || d[pos] == '1')) {
+      result.add(_Token.number(d[pos] == '1' ? 1 : 0));
+      pos++;
+      arg++;
+      continue;
+    }
+    final m = _pathRegExp.matchAsPrefix(d, pos);
+    if (m == null) {
+      pos++;
+    } else if (m.group(1) case final cmd?) {
+      result.add(_Token.command(cmd));
+      arc = cmd == 'A' || cmd == 'a';
+      arg = 0;
+      pos = m.end;
     } else {
       result.add(_Token.number(double.parse(m.group(2)!)));
+      arg++;
+      pos = m.end;
     }
   }
   return result;

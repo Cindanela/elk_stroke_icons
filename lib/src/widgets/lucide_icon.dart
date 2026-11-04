@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import '../models/lucide_icon_data.dart';
 import '../utils/svg_path_parser.dart';
 
@@ -33,7 +33,8 @@ class LucideIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final iconColor = color ?? IconTheme.of(context).color ?? Colors.black;
+    final iconColor =
+        color ?? IconTheme.of(context).color ?? const Color(0xFF000000);
 
     return SizedBox(
       width: size,
